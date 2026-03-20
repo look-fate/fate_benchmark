@@ -12,7 +12,7 @@ def load_scores(score_dir):
     """加载所有评分 JSON 文件"""
     results = {}
     for f in sorted(os.listdir(score_dir)):
-        if f.endswith('.json'):
+        if f.endswith('.json') and not f.startswith('_'):
             path = os.path.join(score_dir, f)
             with open(path, 'r', encoding='utf-8') as fp:
                 results[f.replace('.json', '')] = json.load(fp)
