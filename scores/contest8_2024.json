@@ -1,9 +1,9 @@
 {
   "stats": {
     "总体": {
-      "total": 35,
-      "correct": 16,
-      "accuracy": 45.7,
+      "total": 40,
+      "correct": 17,
+      "accuracy": 42.5,
       "no_answer": 0
     },
     "流年运势": {
@@ -12,9 +12,9 @@
       "accuracy": 75.0
     },
     "感情": {
-      "total": 10,
-      "correct": 3,
-      "accuracy": 30.0
+      "total": 15,
+      "correct": 4,
+      "accuracy": 26.7
     },
     "六亲": {
       "total": 7,
@@ -401,6 +401,56 @@
       "is_correct": false,
       "dimension": "六亲",
       "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "命主有多重婚姻，目前是第几段婚姻？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "第一段婚姻是何时嫁？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主第一段婚姻嫁的原因是？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主在那一年结束了第一段婚姻？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "第一段婚姻终结的原因",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
       "dataset": "contest8_2024"
     }
   ]
