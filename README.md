@@ -4,7 +4,7 @@
 
 数据集来源于论文 **[BaziQA-Benchmark: Evaluating Symbolic and Temporally Compositional Reasoning in Large Language Models](https://arxiv.org/abs/2602.12889)**。
 
-**[查看测试结果 →](RESULTS.md)**
+**[查看测试结果 →](RESULT.md)**
 
 ## 工作流程
 
