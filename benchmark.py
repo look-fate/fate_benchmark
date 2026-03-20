@@ -117,7 +117,7 @@ def process_person(person, person_index, cache, cache_file, mode=1, theory=1, ag
         birth['year'], birth['month'], birth['day'],
         birth['hour'], birth.get('minute', 0)
     )
-    gender_int = 1 if gender == 'male' else 0
+    gender_int = 0 if gender == 'male' else 1
 
     result = {
         'person_id': person_id,
@@ -243,8 +243,8 @@ def run_dataset(dataset_file, mode=1, theory=1, agent_id=4):
             agent_id=agent_id,
         )
         if not was_cached and idx < len(persons):
-            print(f"\n  等待 60 秒...")
-            time.sleep(60)
+            print(f"\n  等待 30 秒...")
+            time.sleep(30)
 
     print(f"\n[汇总] {os.path.basename(dataset_file)}: 共 {len(persons)} 个命主")
     print(f"结果已保存: {cache_file}")
