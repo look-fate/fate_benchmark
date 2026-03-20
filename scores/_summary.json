@@ -1,0 +1,306 @@
+{
+  "datasets": {
+    "contest8_2021": {
+      "总体": {
+        "total": 40,
+        "correct": 15,
+        "accuracy": 37.5,
+        "no_answer": 0
+      },
+      "流年运势": {
+        "total": 9,
+        "correct": 2,
+        "accuracy": 22.2
+      },
+      "感情": {
+        "total": 7,
+        "correct": 3,
+        "accuracy": 42.9
+      },
+      "六亲": {
+        "total": 6,
+        "correct": 1,
+        "accuracy": 16.7
+      },
+      "事业": {
+        "total": 9,
+        "correct": 3,
+        "accuracy": 33.3
+      },
+      "性格": {
+        "total": 2,
+        "correct": 1,
+        "accuracy": 50.0
+      },
+      "学业": {
+        "total": 2,
+        "correct": 2,
+        "accuracy": 100.0
+      },
+      "财富": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 100.0
+      },
+      "健康": {
+        "total": 3,
+        "correct": 2,
+        "accuracy": 66.7
+      },
+      "其他": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "contest8_2022": {
+      "总体": {
+        "total": 40,
+        "correct": 17,
+        "accuracy": 42.5,
+        "no_answer": 0
+      },
+      "流年运势": {
+        "total": 8,
+        "correct": 1,
+        "accuracy": 12.5
+      },
+      "感情": {
+        "total": 10,
+        "correct": 5,
+        "accuracy": 50.0
+      },
+      "六亲": {
+        "total": 6,
+        "correct": 3,
+        "accuracy": 50.0
+      },
+      "事业": {
+        "total": 4,
+        "correct": 1,
+        "accuracy": 25.0
+      },
+      "性格": {
+        "total": 5,
+        "correct": 4,
+        "accuracy": 80.0
+      },
+      "学业": {
+        "total": 2,
+        "correct": 1,
+        "accuracy": 50.0
+      },
+      "财富": {
+        "total": 3,
+        "correct": 1,
+        "accuracy": 33.3
+      },
+      "健康": {
+        "total": 2,
+        "correct": 1,
+        "accuracy": 50.0
+      }
+    },
+    "contest8_2023": {
+      "总体": {
+        "total": 30,
+        "correct": 9,
+        "accuracy": 30.0,
+        "no_answer": 2
+      },
+      "流年运势": {
+        "total": 4,
+        "correct": 2,
+        "accuracy": 50.0
+      },
+      "感情": {
+        "total": 8,
+        "correct": 2,
+        "accuracy": 25.0
+      },
+      "六亲": {
+        "total": 4,
+        "correct": 1,
+        "accuracy": 25.0
+      },
+      "事业": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "性格": {
+        "total": 2,
+        "correct": 1,
+        "accuracy": 50.0
+      },
+      "学业": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 100.0
+      },
+      "财富": {
+        "total": 4,
+        "correct": 2,
+        "accuracy": 50.0
+      },
+      "健康": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "其他": {
+        "total": 1,
+        "correct": 0,
+        "accuracy": 0.0
+      }
+    },
+    "contest8_2024": {
+      "总体": {
+        "total": 35,
+        "correct": 16,
+        "accuracy": 45.7,
+        "no_answer": 0
+      },
+      "流年运势": {
+        "total": 4,
+        "correct": 3,
+        "accuracy": 75.0
+      },
+      "感情": {
+        "total": 10,
+        "correct": 3,
+        "accuracy": 30.0
+      },
+      "六亲": {
+        "total": 7,
+        "correct": 3,
+        "accuracy": 42.9
+      },
+      "事业": {
+        "total": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "性格": {
+        "total": 2,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "学业": {
+        "total": 2,
+        "correct": 1,
+        "accuracy": 50.0
+      },
+      "财富": {
+        "total": 4,
+        "correct": 3,
+        "accuracy": 75.0
+      },
+      "健康": {
+        "total": 3,
+        "correct": 2,
+        "accuracy": 66.7
+      },
+      "其他": {
+        "total": 1,
+        "correct": 1,
+        "accuracy": 100.0
+      }
+    },
+    "contest8_2025": {
+      "总体": {
+        "total": 40,
+        "correct": 14,
+        "accuracy": 35.0,
+        "no_answer": 0
+      },
+      "流年运势": {
+        "total": 5,
+        "correct": 0,
+        "accuracy": 0.0
+      },
+      "感情": {
+        "total": 7,
+        "correct": 3,
+        "accuracy": 42.9
+      },
+      "六亲": {
+        "total": 7,
+        "correct": 2,
+        "accuracy": 28.6
+      },
+      "事业": {
+        "total": 7,
+        "correct": 3,
+        "accuracy": 42.9
+      },
+      "性格": {
+        "total": 7,
+        "correct": 4,
+        "accuracy": 57.1
+      },
+      "学业": {
+        "total": 3,
+        "correct": 1,
+        "accuracy": 33.3
+      },
+      "健康": {
+        "total": 4,
+        "correct": 1,
+        "accuracy": 25.0
+      }
+    }
+  },
+  "totals": {
+    "总体": {
+      "total": 185,
+      "correct": 71,
+      "accuracy": 38.4
+    },
+    "流年运势": {
+      "total": 30,
+      "correct": 8,
+      "accuracy": 26.7
+    },
+    "感情": {
+      "total": 42,
+      "correct": 16,
+      "accuracy": 38.1
+    },
+    "六亲": {
+      "total": 30,
+      "correct": 10,
+      "accuracy": 33.3
+    },
+    "事业": {
+      "total": 27,
+      "correct": 7,
+      "accuracy": 25.9
+    },
+    "性格": {
+      "total": 18,
+      "correct": 10,
+      "accuracy": 55.6
+    },
+    "学业": {
+      "total": 10,
+      "correct": 6,
+      "accuracy": 60.0
+    },
+    "财富": {
+      "total": 12,
+      "correct": 7,
+      "accuracy": 58.3
+    },
+    "健康": {
+      "total": 13,
+      "correct": 6,
+      "accuracy": 46.2
+    },
+    "其他": {
+      "total": 3,
+      "correct": 1,
+      "accuracy": 33.3
+    }
+  }
+}

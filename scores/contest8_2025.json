@@ -1,0 +1,447 @@
+{
+  "stats": {
+    "总体": {
+      "total": 40,
+      "correct": 14,
+      "accuracy": 35.0,
+      "no_answer": 0
+    },
+    "流年运势": {
+      "total": 5,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "感情": {
+      "total": 7,
+      "correct": 3,
+      "accuracy": 42.9
+    },
+    "六亲": {
+      "total": 7,
+      "correct": 2,
+      "accuracy": 28.6
+    },
+    "事业": {
+      "total": 7,
+      "correct": 3,
+      "accuracy": 42.9
+    },
+    "性格": {
+      "total": 7,
+      "correct": 4,
+      "accuracy": 57.1
+    },
+    "学业": {
+      "total": 3,
+      "correct": 1,
+      "accuracy": 33.3
+    },
+    "健康": {
+      "total": 4,
+      "correct": 1,
+      "accuracy": 25.0
+    }
+  },
+  "details": [
+    {
+      "question_index": 1,
+      "question": "此命出生家境如何？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "六亲",
+      "person_id": "guangdong_female_19511114_P001",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "婚姻如何？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "guangdong_female_19511114_P001",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "此人年轻时何种工作？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "事业",
+      "person_id": "guangdong_female_19511114_P001",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "1980年发生何事？",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "guangdong_female_19511114_P001",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "1993年发生何事？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "guangdong_female_19511114_P001",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "2022年至现在，命主的健康状况如何？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "健康",
+      "person_id": "hongkong_female_19870705_P002",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主的性格特质、学历水平和现时职业情况如何？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "hongkong_female_19870705_P002",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在2018年至现在，财政状态和事业运势怎样？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "事业",
+      "person_id": "hongkong_female_19870705_P002",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主现时的婚姻状况如何？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "hongkong_female_19870705_P002",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "现时命主与父母的关系、家庭背景？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "hongkong_female_19870705_P002",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主出身及家庭情况？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "miyazaki_male_19830421_P003",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主的样貌、性情、爱好及职业？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "miyazaki_male_19830421_P003",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主的学历和职业状况？",
+      "correct_answer": "D",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "学业",
+      "person_id": "miyazaki_male_19830421_P003",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主的婚恋和子女情况？",
+      "correct_answer": "C",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "miyazaki_male_19830421_P003",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "2022年，命主发生的重要事件？",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "miyazaki_male_19830421_P003",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主儿时家庭情况？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "singapore_male_19930408_P004",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主在2001年发生何事？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "singapore_male_19930408_P004",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在2022年后的职业/行业情况？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "事业",
+      "person_id": "singapore_male_19930408_P004",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主感情状况为何？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "singapore_male_19930408_P004",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "命主抑郁症状最严重的年份？",
+      "correct_answer": "B",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "singapore_male_19930408_P004",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主目前的工作和生活情况如何？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "malaysia_male_19880110_P005",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主在2004时发生了什么事？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "malaysia_male_19880110_P005",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在那一年结婚？",
+      "correct_answer": "D",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "malaysia_male_19880110_P005",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主现在的婚姻状况，子女状况如何？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "六亲",
+      "person_id": "malaysia_male_19880110_P005",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "命主个性及特色情况如何？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "malaysia_male_19880110_P005",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主的性格和出生如何？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "malaysia_male_19730824_P006",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主喜欢的居家装修风格是？",
+      "correct_answer": "B",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "malaysia_male_19730824_P006",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "在丙辰大限（43–52），命主在哪一年出国创业？和什么领域相关？",
+      "correct_answer": "B",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "malaysia_male_19730824_P006",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主在2021年，发生何事？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "malaysia_male_19730824_P006",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "命主在2024年的健康状况如何？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "malaysia_male_19730824_P006",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主原生家庭父母亲状况？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "taiwan_female_19880215_P007",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主大学时期读什么科系？",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "学业",
+      "person_id": "taiwan_female_19880215_P007",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主目前的婚姻状态？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "taiwan_female_19880215_P007",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主现职行业？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "taiwan_female_19880215_P007",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "对命主之描述？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "taiwan_female_19880215_P007",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 1,
+      "question": "命主学历状况为何？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "学业",
+      "person_id": "beijing_male_19700722_P008",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 2,
+      "question": "命主出社会后的工作？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "beijing_male_19700722_P008",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 3,
+      "question": "命主早年一直在北京生活，直到哪个年龄有搬迁大变动，从北京去厦门工作？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "beijing_male_19700722_P008",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 4,
+      "question": "命主身体状况为何？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "beijing_male_19700722_P008",
+      "dataset": "contest8_2025"
+    },
+    {
+      "question_index": 5,
+      "question": "命主一生整体外界评价的性格如何？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "beijing_male_19700722_P008",
+      "dataset": "contest8_2025"
+    }
+  ]
+}
