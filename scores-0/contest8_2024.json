@@ -1,0 +1,452 @@
+{
+  "stats": {
+    "总体": {
+      "total": 40,
+      "correct": 14,
+      "accuracy": 35.0,
+      "no_answer": 0
+    },
+    "流年运势": {
+      "total": 6,
+      "correct": 3,
+      "accuracy": 50.0
+    },
+    "感情": {
+      "total": 16,
+      "correct": 6,
+      "accuracy": 37.5
+    },
+    "六亲": {
+      "total": 6,
+      "correct": 2,
+      "accuracy": 33.3
+    },
+    "事业": {
+      "total": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    "性格": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 50.0
+    },
+    "学业": {
+      "total": 2,
+      "correct": 1,
+      "accuracy": 50.0
+    },
+    "财富": {
+      "total": 4,
+      "correct": 1,
+      "accuracy": 25.0
+    },
+    "健康": {
+      "total": 2,
+      "correct": 0,
+      "accuracy": 0.0
+    }
+  },
+  "details": [
+    {
+      "question_index": 1,
+      "question": "以下哪项描述符合命主的出身情况？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "guangdong_female_19800824_P001",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "以下哪项描述符合命主的学历情况？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "学业",
+      "person_id": "guangdong_female_19800824_P001",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "以下哪项描述符合命主的配偶工作状况？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "guangdong_female_19800824_P001",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "以下哪项描述符合命主的子息状况？",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "六亲",
+      "person_id": "guangdong_female_19800824_P001",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "在2022壬寅年，以下哪项是命主的婚姻经历？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "guangdong_female_19800824_P001",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "命主的性格和情绪？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "chaozhou_male_19720108_P002",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "命主的男女关系和婚姻情况？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "chaozhou_male_19720108_P002",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主事业上的特色？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "chaozhou_male_19720108_P002",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主的母亲于哪年离世？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "chaozhou_male_19720108_P002",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "命主于虚龄34至43时的田宅运？",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "财富",
+      "person_id": "chaozhou_male_19720108_P002",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "大约哪个时间段，运程最佳？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "流年运势",
+      "person_id": "male_19611230_P003",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "何时结婚？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "male_19611230_P003",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "有官非刑事出现的时间？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "流年运势",
+      "person_id": "male_19611230_P003",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "有凶劫之灾出现的时间？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19611230_P003",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "那个时段，破财最严重？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "财富",
+      "person_id": "male_19611230_P003",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "1998年开始–1999年结束的感情对象类型，分手原因？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19830326_P006",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "1999年恋爱，2002分手。类型与分手原因？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19830326_P006",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "2002年认识，大学师兄。2006年结婚，2009年离婚。对象类型和离婚原因？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "female_19830326_P006",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "2012–2013之间，发生了一件严重的事，遇到一个桃花帮助了自己？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "流年运势",
+      "person_id": "female_19830326_P006",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "2019年开始，2021年结束，桃花类型、分手原因？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19830326_P006",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "命主的学历状况如何？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "学业",
+      "person_id": "female_19800921_P007",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "命主的婚姻状况如何？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19800921_P007",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在2017和2019年发生了什么事？",
+      "correct_answer": "D",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "female_19800921_P007",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主的两名小孩在哪一年出生？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "female_19800921_P007",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "命主毕业后从事什么行业？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "female_19800921_P007",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "请问命主在一岁前被诊断出那一种疾病？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "此命主的出身贫或富？",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "六亲",
+      "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主的身材外貌如何？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主在2016年，家中发生何事？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "命主父亲现在的身家？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "male_20070131_P008",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "命主有多重婚姻，目前是第几段婚姻？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "第一段婚姻是何时嫁？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主第一段婚姻嫁的原因是？",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主在那一年结束了第一段婚姻？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "第一段婚姻终结的原因",
+      "correct_answer": "A",
+      "ai_answer": "A",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "female_19831028_P004",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 1,
+      "question": "命主在哪一年登记结婚？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "male_19710412_P005",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 2,
+      "question": "命主在哪一年登记离婚？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "male_19710412_P005",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 3,
+      "question": "命主工作收入平均如何？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "财富",
+      "person_id": "male_19710412_P005",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 4,
+      "question": "命主名下拥有房产吗？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "财富",
+      "person_id": "male_19710412_P005",
+      "dataset": "contest8_2024"
+    },
+    {
+      "question_index": 5,
+      "question": "命主在哪一年意外受伤大腿骨折？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "male_19710412_P005",
+      "dataset": "contest8_2024"
+    }
+  ]
+}

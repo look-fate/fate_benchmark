@@ -1,0 +1,452 @@
+{
+  "stats": {
+    "总体": {
+      "total": 40,
+      "correct": 11,
+      "accuracy": 27.5,
+      "no_answer": 0
+    },
+    "流年运势": {
+      "total": 11,
+      "correct": 2,
+      "accuracy": 18.2
+    },
+    "感情": {
+      "total": 7,
+      "correct": 2,
+      "accuracy": 28.6
+    },
+    "六亲": {
+      "total": 5,
+      "correct": 1,
+      "accuracy": 20.0
+    },
+    "事业": {
+      "total": 8,
+      "correct": 1,
+      "accuracy": 12.5
+    },
+    "性格": {
+      "total": 3,
+      "correct": 1,
+      "accuracy": 33.3
+    },
+    "学业": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 100.0
+    },
+    "财富": {
+      "total": 1,
+      "correct": 1,
+      "accuracy": 100.0
+    },
+    "健康": {
+      "total": 3,
+      "correct": 1,
+      "accuracy": 33.3
+    }
+  },
+  "details": [
+    {
+      "question_index": 1,
+      "question": "命主财运?",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "财富",
+      "person_id": "male_19540318_P025",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "命主父亲于哪年去世?",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "male_19540318_P025",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "命主哪年到香港?",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19540318_P025",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "虚龄35至44甲戌大运期间，最困扰命主的疾病为?",
+      "correct_answer": "C",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "male_19540318_P025",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "虚龄35至44甲戌大运期间，其子女运？",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "六亲",
+      "person_id": "male_19540318_P025",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "命主目前的职业是什么？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "male_19831019_P026",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "命主已经离婚，第二婚是哪一年？",
+      "correct_answer": "D",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "male_19831019_P026",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "命主目前有一个孩子，那年出生？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "male_19831019_P026",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "命主在2011年发生了一件事情？",
+      "correct_answer": "B",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19831019_P026",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "命主的性格外表怎样？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "male_19831019_P026",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "命主读书及学历情况如何？",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "学业",
+      "person_id": "female_19841220_P027",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "命主毕业后，从事那类型工作？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "female_19841220_P027",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "命主感情、婚姻情况如何？",
+      "correct_answer": "C",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19841220_P027",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "命主于哪一年有家宅搬迁？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "female_19841220_P027",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "命主2018年发生了什么事情及结果？",
+      "correct_answer": "A",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "female_19841220_P027",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "这人个性特征如何?",
+      "correct_answer": "B",
+      "ai_answer": "B",
+      "is_correct": true,
+      "dimension": "性格",
+      "person_id": "male_19770706_P028",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "这人曾经做过啥工作?",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "male_19770706_P028",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "2017年起步入壬寅大运，工作有何变化？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "流年运势",
+      "person_id": "male_19770706_P028",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "这人那一年结婚，几个小孩？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "male_19770706_P028",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "这人健康如何？",
+      "correct_answer": "C",
+      "ai_answer": "C",
+      "is_correct": true,
+      "dimension": "健康",
+      "person_id": "male_19770706_P028",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "1970年出生的游先生，他的婚姻状况与学历高低如何？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "感情",
+      "person_id": "male_19700723_P029",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "游先生在45–54岁癸未大限（2014–现在）工作运如何？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "事业",
+      "person_id": "male_19700723_P029",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "游先生的个性智慧如何？以及52岁（2021）父母状况？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "性格",
+      "person_id": "male_19700723_P029",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "游先生在2020年发生的事项，哪项正确？",
+      "correct_answer": "B",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19700723_P029",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "游先生52岁目前健康状况如何？",
+      "correct_answer": "C",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "健康",
+      "person_id": "male_19700723_P029",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "命主在2018年开始学习哪一种技能？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "学业",
+      "person_id": "female_19750107_P030",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "命主第一次与男生交往在那一年？",
+      "correct_answer": "D",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19750107_P030",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在那一年结婚？",
+      "correct_answer": "D",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19750107_P030",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "命主现时职业是什么？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "female_19750107_P030",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "命主2014年运势如何？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "female_19750107_P030",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "命主从1975年至2020年（丙辰至庚申大运）的职业是什么？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "male_19530127_P031",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "命主在何一年得到子女？",
+      "correct_answer": "B",
+      "ai_answer": "A",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "male_19530127_P031",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "命主在哪一年闹上官非并被警察扣留？",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19530127_P031",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 4,
+      "question": "命主是因为什么事闹上官非？",
+      "correct_answer": "A",
+      "ai_answer": "D",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19530127_P031",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 5,
+      "question": "命主在2016年发生何事？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "六亲",
+      "person_id": "male_19530127_P031",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "以下哪项描述是命主截至 2018 年的事业状态？",
+      "correct_answer": "A",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "male_19710910_P033",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "以下哪项是命主于 2016 及 2017 年的经历？",
+      "correct_answer": "B",
+      "ai_answer": "C",
+      "is_correct": false,
+      "dimension": "流年运势",
+      "person_id": "male_19710910_P033",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 3,
+      "question": "以下哪项描述符合命主于 2019 年的状况？",
+      "correct_answer": "D",
+      "ai_answer": "D",
+      "is_correct": true,
+      "dimension": "流年运势",
+      "person_id": "male_19710910_P033",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 1,
+      "question": "截至2017年9月，哪项符合命主感情与婚姻状况？",
+      "correct_answer": "D",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "感情",
+      "person_id": "female_19670827_P034",
+      "dataset": "contest8_2021"
+    },
+    {
+      "question_index": 2,
+      "question": "截至2017年9月，哪项符合命主财政与事业？",
+      "correct_answer": "C",
+      "ai_answer": "B",
+      "is_correct": false,
+      "dimension": "事业",
+      "person_id": "female_19670827_P034",
+      "dataset": "contest8_2021"
+    }
+  ]
+}
