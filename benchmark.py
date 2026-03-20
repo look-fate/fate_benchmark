@@ -2,13 +2,15 @@
 """
 BaziQA Benchmark - 测试 AI 八字分析能力
 流程: 读取数据集 -> 调用排盘API -> 调用解盘AI -> 记录结果
-已问过的命例会缓存到 results/<dataset>_cache.json，不会重复请求
+已问过的命例会缓存到 result-<mode>/<dataset>_cache.json，不会重复请求
 """
+import argparse
 import json
-import requests
-import time
 import os
+import time
 from datetime import datetime, timezone, timedelta
+
+import requests
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -38,6 +40,10 @@ HEADERS = {
     'site-id': '1',
     'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1'
 }
+
+
+def get_result_dir(mode):
+    return os.path.join(SCRIPT_DIR, f'result-{mode}')
 
 
 def load_cache(cache_file):
@@ -94,7 +100,7 @@ def format_questions_with_options(questions):
     return "\n\n".join(parts)
 
 
-def process_person(person, person_index, cache, cache_file):
+def process_person(person, person_index, cache, cache_file, mode=1, theory=1, agent_id=4):
     person_id = person['person_id']
 
     # 检查缓存，已问过则跳过
@@ -174,7 +180,13 @@ def process_person(person, person_index, cache, cache_file):
 
     # Step 3: 解盘
     try:
-        status2, solve_resp = call_bazi_solve(question_text, raw_json_str)
+        status2, solve_resp = call_bazi_solve(
+            question_text,
+            raw_json_str,
+            agent_id=agent_id,
+            mode=mode,
+            theory=theory,
+        )
     except Exception as e:
         print(f"  [解盘错误] {e}")
         result['solve_error'] = str(e)
@@ -195,7 +207,7 @@ def process_person(person, person_index, cache, cache_file):
     return cache[person_id]
 
 
-def run_dataset(dataset_file):
+def run_dataset(dataset_file, mode=1, theory=1, agent_id=4):
     print(f"\n{'#' * 60}")
     print(f"数据集: {dataset_file}")
 
@@ -210,16 +222,26 @@ def run_dataset(dataset_file):
     print(f"总题数: {metadata.get('total_questions', 'unknown')}")
 
     # 加载缓存
-    output_dir = os.path.join(SCRIPT_DIR, 'results')
+    output_dir = get_result_dir(mode)
     basename = os.path.basename(dataset_file).replace('.json', '')
     cache_file = os.path.join(output_dir, f'{basename}_cache.json')
     cache = load_cache(cache_file)
     cached_count = sum(1 for p in persons if p['person_id'] in cache)
     print(f"已缓存: {cached_count}/{len(persons)}")
+    print(f"模式: mode={mode}, theory={theory}, agent_id={agent_id}")
+    print(f"结果目录: {output_dir}")
 
     for idx, person in enumerate(persons, 1):
         was_cached = person['person_id'] in cache
-        process_person(person, idx, cache, cache_file)
+        process_person(
+            person,
+            idx,
+            cache,
+            cache_file,
+            mode=mode,
+            theory=theory,
+            agent_id=agent_id,
+        )
         if not was_cached and idx < len(persons):
             print(f"\n  等待 60 秒...")
             time.sleep(60)
@@ -229,14 +251,20 @@ def run_dataset(dataset_file):
 
 
 def main():
-    import sys
     import glob
+
+    parser = argparse.ArgumentParser(description="运行 BaziQA 基准测试")
+    parser.add_argument('dataset_files', nargs='*', help='要运行的数据集文件，默认运行 data/ 下全部 JSON')
+    parser.add_argument('--mode', type=int, default=1, choices=[0, 1], help='解盘接口 mode，默认 1')
+    parser.add_argument('--theory', type=int, default=1, help='解盘接口 theory，默认 1')
+    parser.add_argument('--agent-id', type=int, default=4, help='解盘接口 agentId，默认 4')
+    args = parser.parse_args()
 
     dataset_dir = os.path.join(SCRIPT_DIR, 'data')
 
-    if len(sys.argv) > 1:
+    if args.dataset_files:
         # 指定文件则只跑指定的
-        dataset_files = sys.argv[1:]
+        dataset_files = args.dataset_files
     else:
         # 默认跑 data/ 下所有 JSON
         dataset_files = sorted(glob.glob(os.path.join(dataset_dir, '*.json')))
@@ -244,7 +272,12 @@ def main():
     print(f"共 {len(dataset_files)} 个数据集")
 
     for dataset_file in dataset_files:
-        run_dataset(dataset_file)
+        run_dataset(
+            dataset_file,
+            mode=args.mode,
+            theory=args.theory,
+            agent_id=args.agent_id,
+        )
 
 
 if __name__ == '__main__':

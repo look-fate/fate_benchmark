@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """补全评分缺失的命主：找出 cache 中有但 scores 中缺失的命主，重新评分并合并"""
+import argparse
 import json
 import os
 import time
 
+from benchmark import get_result_dir
 from score import (
+    get_score_dir,
     fetch_ai_answer,
     score_person,
     compute_stats,
@@ -92,8 +95,18 @@ def patch_dataset(dataset_name, result_dir, score_dir):
 
 
 def main():
-    result_dir = os.path.join(SCRIPT_DIR, 'result-1')
-    score_dir = os.path.join(SCRIPT_DIR, 'scores')
+    parser = argparse.ArgumentParser(description="补全评分缺失的命主")
+    parser.add_argument('result_dir', nargs='?', help='结果目录，默认使用当前 mode 对应目录')
+    parser.add_argument('score_dir', nargs='?', help='评分目录，默认使用当前 mode 对应目录')
+    parser.add_argument('--mode', type=int, default=1, choices=[0, 1], help='默认目录使用的 mode，默认 1')
+    args = parser.parse_args()
+
+    result_dir = args.result_dir or get_result_dir(args.mode)
+    score_dir = args.score_dir or get_score_dir(args.mode)
+
+    if not os.path.isdir(result_dir):
+        print(f"目录不存在: {result_dir}")
+        return
 
     datasets = sorted(
         f.replace('_cache.json', '')
@@ -106,7 +119,7 @@ def main():
 
     # 重新生成汇总
     print("\n重新生成汇总...")
-    os.system(f'python3 {os.path.join(SCRIPT_DIR, "stats.py")}')
+    os.system(f'python3 {os.path.join(SCRIPT_DIR, "stats.py")} "{score_dir}"')
 
 
 if __name__ == '__main__':

@@ -11,7 +11,7 @@
 ```
 数据集 (data/*.json)
     ↓
-benchmark.py  →  排盘API + 解盘AI  →  缓存结果 (result-1/*_cache.json)
+benchmark.py  →  排盘API + 解盘AI  →  缓存结果 (result-<mode>/*_cache.json)
     ↓
 score.py  →  Gemini 分类 & 提取答案  →  评分结果 (scores/*.json)
     ↓
@@ -25,7 +25,8 @@ stats.py  →  多维度汇总报告
 ├── score.py       # 评分系统：用 Gemini 提取 AI 答案并评分
 ├── stats.py       # 统计汇总：多维度准确率报告
 ├── data/          # 数据集（按竞赛年份组织）
-├── result-1/      # 排盘/解盘缓存结果
+├── result-0/      # mode 0 的排盘/解盘缓存结果
+├── result-1/      # mode 1 的排盘/解盘缓存结果
 └── scores/        # 评分结果及汇总
 ```
 
@@ -45,11 +46,17 @@ GEMINI_MODEL=gemini-3-flash-preview          # 可选，默认值如左
 ### 1. 运行基准测试
 
 ```bash
-# 运行 data/ 下所有数据集
+# 默认运行 data/ 下所有数据集，生成 mode 1 结果到 result-1/
 python benchmark.py
 
 # 运行指定数据集
 python benchmark.py data/contest8_2025.json
+
+# 生成 mode 0 测试数据到 result-0/
+python benchmark.py --mode 0
+
+# 指定 mode 0 + 指定数据集
+python benchmark.py --mode 0 data/contest8_2025.json
 ```
 
 已测试过的命例会缓存，不会重复请求。
@@ -59,6 +66,9 @@ python benchmark.py data/contest8_2025.json
 ```bash
 # 默认读取 result-1/ 并输出到 scores/
 python score.py
+
+# 评分 mode 0 结果，默认输出到 scores-0/
+python score.py --mode 0
 
 # 自定义目录
 python score.py <结果目录> <输出目录>

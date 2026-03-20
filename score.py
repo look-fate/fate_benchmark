@@ -3,12 +3,13 @@
 BaziQA 评分系统 - 多维度评估 AI 八字分析准确率
 流程: 读取缓存结果 -> 获取AI回答 -> Gemini评分 -> 多维度统计 -> 存储结果
 """
+import argparse
 import json
 import os
 import re
 import time
+
 import requests
-from datetime import datetime
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -49,6 +50,14 @@ DIMENSIONS = ["流年运势", "感情", "六亲", "事业", "性格", "学业", 
 
 MAX_RETRIES = 5
 RETRY_DELAY = 10  # 秒
+
+
+def get_result_dir(mode):
+    return os.path.join(SCRIPT_DIR, f'result-{mode}')
+
+
+def get_score_dir(mode):
+    return os.path.join(SCRIPT_DIR, 'scores' if mode == 1 else f'scores-{mode}')
 
 
 def _retry(func, *args, retries=MAX_RETRIES, delay=RETRY_DELAY, **kwargs):
@@ -335,14 +344,14 @@ def run_scoring(result_dir, output_dir):
 
 
 def main():
-    import sys
-    result_dir = os.path.join(SCRIPT_DIR, 'result-1')
-    output_dir = os.path.join(SCRIPT_DIR, 'scores')
+    parser = argparse.ArgumentParser(description="对结果缓存进行评分")
+    parser.add_argument('result_dir', nargs='?', help='结果目录，默认使用当前 mode 对应目录')
+    parser.add_argument('output_dir', nargs='?', help='评分输出目录，默认使用当前 mode 对应目录')
+    parser.add_argument('--mode', type=int, default=1, choices=[0, 1], help='默认目录使用的 mode，默认 1')
+    args = parser.parse_args()
 
-    if len(sys.argv) > 1:
-        result_dir = sys.argv[1]
-    if len(sys.argv) > 2:
-        output_dir = sys.argv[2]
+    result_dir = args.result_dir or get_result_dir(args.mode)
+    output_dir = args.output_dir or get_score_dir(args.mode)
 
     run_scoring(result_dir, output_dir)
 

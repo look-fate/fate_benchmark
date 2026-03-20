@@ -6,9 +6,9 @@
     python3 regen.py <person_id> <person_id> ...     # 批量重跑
     python3 regen.py --all-failed                    # 自动找出所有评分缺失的命主
 """
+import argparse
 import json
 import os
-import sys
 import time
 
 from benchmark import (
@@ -16,36 +16,63 @@ from benchmark import (
     call_bazi_arrange,
     call_bazi_solve,
     format_questions_with_options,
+    get_result_dir,
     load_cache,
     save_cache,
 )
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-RESULT_DIR = os.path.join(SCRIPT_DIR, 'result-1')
-SCORE_DIR = os.path.join(SCRIPT_DIR, 'scores')
 
 
-def find_person_in_caches(person_id):
+def get_score_dir(mode):
+    return os.path.join(SCRIPT_DIR, 'scores' if mode == 1 else f'scores-{mode}')
+
+
+def infer_mode_from_cache_file(cache_file):
+    dirname = os.path.basename(os.path.dirname(cache_file))
+    if dirname.startswith('result-'):
+        suffix = dirname.split('-', 1)[1]
+        if suffix.isdigit():
+            return int(suffix)
+    return 1
+
+
+def find_person_in_caches(person_id, result_dir=None):
     """在所有缓存文件中查找指定 person_id，返回 (cache_file, cache_dict)"""
-    for f in sorted(os.listdir(RESULT_DIR)):
-        if not f.endswith('_cache.json'):
+    if result_dir is None:
+        result_dirs = sorted(
+            os.path.join(SCRIPT_DIR, d)
+            for d in os.listdir(SCRIPT_DIR)
+            if d.startswith('result-') and os.path.isdir(os.path.join(SCRIPT_DIR, d))
+        )
+    else:
+        result_dirs = [result_dir]
+
+    for current_result_dir in result_dirs:
+        if not os.path.isdir(current_result_dir):
             continue
-        cache_file = os.path.join(RESULT_DIR, f)
-        cache = load_cache(cache_file)
-        if person_id in cache:
-            return cache_file, cache
+        for f in sorted(os.listdir(current_result_dir)):
+            if not f.endswith('_cache.json'):
+                continue
+            cache_file = os.path.join(current_result_dir, f)
+            cache = load_cache(cache_file)
+            if person_id in cache:
+                return cache_file, cache
     return None, None
 
 
-def find_all_failed():
+def find_all_failed(result_dir, score_dir):
     """找出所有评分中缺失的 person_id，返回列表"""
     missing = []
-    for f in sorted(os.listdir(RESULT_DIR)):
+    if not os.path.isdir(result_dir):
+        return missing
+
+    for f in sorted(os.listdir(result_dir)):
         if not f.endswith('_cache.json'):
             continue
         dataset_name = f.replace('_cache.json', '')
-        cache_file = os.path.join(RESULT_DIR, f)
-        score_file = os.path.join(SCORE_DIR, f'{dataset_name}.json')
+        cache_file = os.path.join(result_dir, f)
+        score_file = os.path.join(score_dir, f'{dataset_name}.json')
 
         cache = load_cache(cache_file)
         if os.path.exists(score_file):
@@ -61,9 +88,9 @@ def find_all_failed():
     return missing
 
 
-def regen_person(person_id):
+def regen_person(person_id, mode=None, theory=1, agent_id=4, result_dir=None):
     """重新排盘+解盘，更新缓存"""
-    cache_file, cache = find_person_in_caches(person_id)
+    cache_file, cache = find_person_in_caches(person_id, result_dir=result_dir)
     if not cache:
         print(f"[{person_id}] 未在任何缓存中找到，跳过")
         return False
@@ -115,7 +142,14 @@ def regen_person(person_id):
     print(f"  [解盘] 发送 {len(questions)} 个问题...")
 
     try:
-        status2, solve_resp = call_bazi_solve(question_text, raw_json_str)
+        solve_mode = mode if mode is not None else infer_mode_from_cache_file(cache_file)
+        status2, solve_resp = call_bazi_solve(
+            question_text,
+            raw_json_str,
+            agent_id=agent_id,
+            mode=solve_mode,
+            theory=theory,
+        )
     except Exception as e:
         print(f"  [解盘错误] {e}")
         return False
@@ -133,24 +167,41 @@ def regen_person(person_id):
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("用法:")
-        print("  python3 regen.py <person_id> [person_id ...]")
-        print("  python3 regen.py --all-failed")
+    parser = argparse.ArgumentParser(description="重新生成指定命主的解盘缓存")
+    parser.add_argument('person_ids', nargs='*', help='要重跑的 person_id')
+    parser.add_argument('--all-failed', action='store_true', help='自动找出评分缺失的命主')
+    parser.add_argument('--mode', type=int, choices=[0, 1], help='解盘接口 mode；也用于默认结果目录')
+    parser.add_argument('--theory', type=int, default=1, help='解盘接口 theory，默认 1')
+    parser.add_argument('--agent-id', type=int, default=4, help='解盘接口 agentId，默认 4')
+    args = parser.parse_args()
+
+    if not args.all_failed and not args.person_ids:
+        parser.print_help()
         return
 
-    if sys.argv[1] == '--all-failed':
-        person_ids = find_all_failed()
+    result_dir = get_result_dir(args.mode) if args.mode is not None else None
+    score_dir = get_score_dir(args.mode) if args.mode is not None else get_score_dir(1)
+
+    if args.all_failed:
+        if result_dir is None:
+            result_dir = get_result_dir(1)
+        person_ids = find_all_failed(result_dir, score_dir)
         if not person_ids:
             print("没有缺失的命主")
             return
         print(f"找到 {len(person_ids)} 个缺失命主: {person_ids}")
     else:
-        person_ids = sys.argv[1:]
+        person_ids = args.person_ids
 
     success = 0
     for i, pid in enumerate(person_ids):
-        if regen_person(pid):
+        if regen_person(
+            pid,
+            mode=args.mode,
+            theory=args.theory,
+            agent_id=args.agent_id,
+            result_dir=result_dir,
+        ):
             success += 1
         if i < len(person_ids) - 1:
             print("\n  等待 60 秒...")
